@@ -1,0 +1,14 @@
+h1 {
+  color: #000;
+}
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+p.author {
+  margin-top: 30px;
+  border-top: 1px solid #3333;
+  padding-top: 20px;
+}
