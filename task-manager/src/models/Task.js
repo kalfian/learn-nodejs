@@ -5,6 +5,7 @@ const Task = mongoose.model('Task', {
     description: {
         type: String,
         required: true,
+        unique: true,
         trim: true
     },
     isComplete: {
