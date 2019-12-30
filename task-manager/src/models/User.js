@@ -91,6 +91,16 @@ userSchema.methods.createToken = async function () {
     return token
 }
 
+userSchema.methods.getPublicProfile = function() {
+    const user = this
+    const userObject = user.toObject()
+
+    delete userObject.password
+    delete userObject.tokens
+
+    return userObject
+}
+
 const User = mongoose.model('User', userSchema)
 
 module.exports = User
